@@ -1,6 +1,8 @@
+import re
+
 class StringCalc():
 
-    delimiters: str = ","
+    delimiters: list[str] = []
 
     def add(self, numbers : str) -> int:
         result = 0
@@ -9,11 +11,17 @@ class StringCalc():
         
         numbers = self.handle_format_delimiter(numbers)
 
-        delimiter = self.delimiters
+        default_delimiter = ","
 
         # split string with two separetors
-        numbers = numbers.replace("\n", delimiter)
-        nums = numbers.split(delimiter)
+        numbers = numbers.replace("\n", default_delimiter)
+
+        # replace delimiters with default
+        for delimiter in self.delimiters:
+            print(delimiter)
+            numbers = numbers.replace(delimiter, default_delimiter)
+
+        nums = numbers.split(default_delimiter)
 
         # cast string to int and remove numbers greater than 1000
         nums_int = [int(i) for i in nums if int(i) <= 1000]
@@ -31,12 +39,21 @@ class StringCalc():
         
         # remove "//"
         numbers = numbers[2:]
+        # split format delimiter and numbers
         string_splitted = numbers.split("\n")
 
         delimiter = string_splitted[0]
-        self.delimiters = delimiter.replace("[", "").replace("]", "")
-
         numbers = string_splitted[1]
+
+        matches = re.findall(r'\[(.*?)\]', delimiter)
+        if len(matches) > 0:
+            delimiter = matches
+        
+        # force delimiter to be a list
+        if not isinstance(delimiter, list):
+            delimiter = [delimiter]
+
+        self.delimiters = delimiter
 
         return numbers
     

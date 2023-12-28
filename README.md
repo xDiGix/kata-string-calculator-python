@@ -21,6 +21,6 @@ https://kata-log.rocks/string-calculator-kata
 7. Step 7
    - [x] "//[***]\n1***2***3" = 6 (format "//[delimiter]\n")
 8. Step 8
-   - [ ] "//[*][%]\n1*2%3" = 6 (format //[delim1][delim2]\n)
+   - [x] "//[*][%]\n1*2%3" = 6 (format //[delim1][delim2]\n)
 9. Step 9
    - [ ] "//[***][%%]\n3***3%%3" = 9 (handle multiple delimiters with length longer than one char)
