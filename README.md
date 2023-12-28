@@ -6,8 +6,8 @@ https://kata-log.rocks/string-calculator-kata
 
 1. Step 1
    - [x] "" = 0
-   - [ ] "1" = 1
-   - [ ] "1,2" = 3
+   - [x] "1" = 1
+   - [x] "1,2" = 3
 2. Step 2
    - [ ] "3,5,1" = 9
 3. Step 3
