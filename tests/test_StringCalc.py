@@ -17,3 +17,6 @@ class TestStringCalc(TestCase):
 
     def test_sum_three_string(self):
         self.assertEqual(self.string_calc.add('3,5,1'), 9)
+
+    def test_sum_with_different_delimiters_string(self):
+        self.assertEqual(self.string_calc.add('1\n2,3'), 6)
