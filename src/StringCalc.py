@@ -16,6 +16,11 @@ class StringCalc():
         nums = numbers.split(delimiter)
         nums_int = [int(i) for i in nums]
 
+        negative_number = [str(i) for i in nums_int if i < 0]
+        
+        if len(negative_number) > 0:
+            raise Exception("Negatives not allowed: " + ', '.join(negative_number))
+
         result = sum(nums_int)
 
         return result
