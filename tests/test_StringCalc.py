@@ -32,3 +32,6 @@ class TestStringCalc(TestCase):
 
     def test_sum_with_number_greater_than_1000_string(self):
         self.assertEqual(self.string_calc.add('2,1001'), 2)
+
+    def test_sum_with_custom_delimiters_with_any_length_string(self):
+        self.assertEqual(self.string_calc.add('//[***]\n1***2***3'), 6)
