@@ -18,7 +18,6 @@ class StringCalc():
 
         # replace delimiters with default
         for delimiter in self.delimiters:
-            print(delimiter)
             numbers = numbers.replace(delimiter, default_delimiter)
 
         nums = numbers.split(default_delimiter)

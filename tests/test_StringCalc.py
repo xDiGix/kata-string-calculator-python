@@ -38,3 +38,6 @@ class TestStringCalc(TestCase):
 
     def test_sum_with_multiple_custom_delimiters_string(self):
         self.assertEqual(self.string_calc.add('//[*][%]\n1*2%3'), 6)
+
+    def test_sum_with_multiple_custom_delimiters_with_any_length_string(self):
+        self.assertEqual(self.string_calc.add('//[***][%%]\n3***3%%3'), 9)

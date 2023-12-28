@@ -1,4 +1,4 @@
-# String Calculator Kata
+# String Calculator Kata in Python
 
 https://kata-log.rocks/string-calculator-kata
 
@@ -23,4 +23,4 @@ https://kata-log.rocks/string-calculator-kata
 8. Step 8
    - [x] "//[*][%]\n1*2%3" = 6 (format //[delim1][delim2]\n)
 9. Step 9
-   - [ ] "//[***][%%]\n3***3%%3" = 9 (handle multiple delimiters with length longer than one char)
+   - [x] "//[***][%%]\n3***3%%3" = 9 (handle multiple delimiters with length longer than one char)
