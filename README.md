@@ -13,7 +13,7 @@ https://kata-log.rocks/string-calculator-kata
 3. Step 3
    - [x] "1\n2,3" = 6
 4. Step 4
-   - [ ] "//;\n1;2" = 3 (format "//[delimiter]\n[numbers…]")
+   - [x] "//;\n1;2" = 3 (format "//[delimiter]\n[numbers…]")
 5. Step 5
    - [ ] "-1" = exception "Negatives not allowed: -1"
 6. Step 6

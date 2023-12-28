@@ -20,3 +20,6 @@ class TestStringCalc(TestCase):
 
     def test_sum_with_different_delimiters_string(self):
         self.assertEqual(self.string_calc.add('1\n2,3'), 6)
+
+    def test_sum_with_custom_delimiters_string(self):
+        self.assertEqual(self.string_calc.add('//;\n1;2'), 3)
