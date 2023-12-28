@@ -14,7 +14,7 @@ class StringCalc():
         # split string with two separetors
         numbers = numbers.replace("\n", delimiter)
         nums = numbers.split(delimiter)
-        nums_int = [int(i) for i in nums]
+        nums_int = [int(i) for i in nums if int(i) <= 1000]
 
         negative_number = [str(i) for i in nums_int if i < 0]
         

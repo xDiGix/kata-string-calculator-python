@@ -29,3 +29,6 @@ class TestStringCalc(TestCase):
             self.string_calc.add('-1')
 
         self.assertTrue('Negatives not allowed: -1' in str(context.exception))
+
+    def test_sum_with_number_greater_than_1000_string(self):
+        self.assertEqual(self.string_calc.add('2,1001'), 2)
