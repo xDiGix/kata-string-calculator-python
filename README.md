@@ -9,7 +9,7 @@ https://kata-log.rocks/string-calculator-kata
    - [x] "1" = 1
    - [x] "1,2" = 3
 2. Step 2
-   - [ ] "3,5,1" = 9
+   - [x] "3,5,1" = 9
 3. Step 3
    - [ ] "1\n2,3" = 6
 4. Step 4

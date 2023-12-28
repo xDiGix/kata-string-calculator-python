@@ -14,3 +14,6 @@ class TestStringCalc(TestCase):
 
     def test_sum_two_string(self):
         self.assertEqual(self.string_calc.add('1,2'), 3)
+
+    def test_sum_three_string(self):
+        self.assertEqual(self.string_calc.add('3,5,1'), 9)
